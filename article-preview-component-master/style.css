@@ -136,3 +136,10 @@ body{
     border-radius: 50%;
     margin-right: 35px;
 }
+
+@media (min-width:768px){
+    .card{
+        display: flex;
+    }
+
+}
