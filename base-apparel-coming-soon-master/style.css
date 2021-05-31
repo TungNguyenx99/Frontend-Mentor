@@ -4,3 +4,118 @@
     padding: 0;
 }
 
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    min-height: 100%;
+    overflow:scroll;
+    background-color:black
+}
+
+.card{
+    display: flex;
+    flex-direction:column;
+    max-width: 16.875em;
+    min-height: 36.25em;
+    background-image:linear-gradient(135deg,hsl(0, 0%, 100%),  hsl(0, 100%, 98%))   
+
+}
+
+.card__logo img{
+    margin:1.375em 11em 1.375em 1.5em;
+    width:4.625em;
+    height:1em;
+}
+
+.card__img{
+    position: relative;
+    width:100%
+}
+
+div.card__image::before{
+    display:inline-block;
+    content:'';
+    background:url(./images/hero-mobile.jpg) no-repeat 0 0;
+    background-size: 100%;
+    width: 100%;
+    height: 11.25em;
+}
+
+.card__content h1{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    padding: 1.5em 3.4375em 0.625em 3.4375em;
+    font-size:2em;
+    letter-spacing:0.2em;
+    text-transform: uppercase;
+}
+
+.card__content p{
+    padding:0 2rem 2rem 2rem;
+    font-size: 0.625em;
+    text-align: center;
+    color: hsl(0, 36%, 70%)
+}
+
+.card__submit{
+    font-size: 16px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.card__submit input{
+    font-size: 16px;
+    width:14.125em;
+    height:2.25em;
+    border: 1px solid hsl(0, 36%, 70%);
+    padding: 15px 30px 15px 20px;
+    border-radius: 5em;
+    background-color:transparent
+}
+
+.card__submit input::placeholder {
+	color: hsl(0, 36%, 70%);
+}
+
+.card__submit input[type="text"]:focus{
+    outline:none
+}
+
+
+.card__submit button{
+    font-size: 16px;
+    position: relative;
+    width:3em;
+    height:2.25em;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 5em;
+    margin-left: -2.5em;
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%), hsl(0, 74%, 74%))
+}
+
+.card>img{
+    position: relative;
+    position: relative;
+    width: 16px;
+    left: 180px;
+    top: -25px;
+}
+
+
+.card label{
+    font-size:0.75em;
+    position: relative;
+    left:3.3333333333333335em;
+    color:hsl(0, 93%, 68%);
+    top:-1em;
+}
+
+.active{
+    display: none;
+}
