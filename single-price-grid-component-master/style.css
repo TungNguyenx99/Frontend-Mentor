@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body {
+    background-color:hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    height:100%
+}
+
+p{
+    font-size:0.688rem
+}
+
+.container {
+    display: grid;
+    width:28.75rem;
+    height:21.625rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 20px;
+}
+
+.header,.left-content,.right-content{
+    padding:2rem;
+}
+
+.header{
+    background-color: #ffffff;
+    grid-column-start:1 ;
+    grid-column-end:3;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.header h2{
+    color:hsl(179, 62%, 43%);
+    padding-bottom: 1rem;
+}
+
+.header h5{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1rem;
+}
+
+.header p{
+    color:hsl(218, 22%, 67%)
+
+}
+
+.left-content{
+    background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 10px;
+}
+
+.left-content h5,.left-content h2,.left-content p{
+    padding-bottom: 1rem;
+}
+
+.left-content span{
+    font-size: 0.625rem;
+    color: hsl(204, 43%, 93%);
+    position: relative;
+    top: -0.313rem;
+}
+
+.left-content button{
+    background-color: hsl(71, 73%, 54%);
+    font-family: 'Karla', sans-serif;
+    color: #ffffff;
+    width:100%;
+    height:2.375rem;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+}
+
+.right-content{
+    background-color:#4ABEBD;
+    border-bottom-right-radius: 10px;
+}
+
+.right-content h4{
+    padding-bottom: 1rem;
+}
+
+.right-content p{
+    font-size:12.8px
+}
+
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+
+    .container{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        width:80%
+    }
+
+    .left-content{
+        border-bottom-left-radius:0px ;
+    }
+
+    .right-content{
+        border-bottom-left-radius:10px
+    }
+
+}
