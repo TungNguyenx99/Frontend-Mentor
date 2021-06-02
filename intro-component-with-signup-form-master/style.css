@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background-color:black;
+    font-size:16px;
+}
+
+section{
+    font-family: 'Poppins', sans-serif;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%) ;
+    width:13.563rem;
+    height:43.125rem;
+    padding:0 1rem 0rem 1rem;
+    padding-top:3.625rem;
+    
+}
+
+.content{
+    color:#ffffff;
+    margin-bottom: 2.5rem;
+}
+
+.content h1{
+    padding:0 1.75rem 1rem 1.75rem;
+    font-size: 15px;
+    font-weight:700;
+}
+
+.content p{
+    text-align: center;
+    font-size: 9px;
+}
+
+.coupon{
+    background-color:hsl(248, 32%, 49%);
+    color:#ffffff;
+    margin-bottom: 1rem;
+    padding:1rem 2.875rem 1rem 2.875rem;
+    border-radius:5px;
+    box-shadow: 0px 5px 3px hsl(249, 10%, 26%) ;
+    font-size:8px;
+    cursor: pointer;
+}
+
+.form{
+    background-color:#fff;
+    padding:1rem;
+    border-radius:5px;
+    box-shadow: 0px 5px 3px hsl(249, 10%, 26%) ;
+}
+
+.form div{
+    margin-bottom:1rem;
+}
+
+.form-control{
+    width:10rem;
+    height:2rem;
+    border: 1px solid hsl(249, 10%, 26%);
+    border-radius:5px;
+    padding-left:10px;
+    font-size: 10px;
+    font-weight:700;
+    
+}
+
+.form-control:focus{
+    outline:none;
+}
+
+.form-control::placeholder{  
+    font-size: 10px;
+    font-weight:700; 
+}
+
+.form-control.error{
+    background:url(./images/icon-error.svg) no-repeat scroll 8.5rem ;
+    background-size: 16px;
+}
+
+.btn{
+    background-color: hsl(154, 59%, 51%);
+    color:#ffffff;
+    text-decoration: none;
+    width:10rem;
+    height:2rem;
+    border:none;
+    border-radius:5px;
+    box-shadow: 0px 5px 3px hsl(249, 10%, 26%) ;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.form p{
+    font-size:7px;
+    text-align: center;
+    opacity: 0.5;
+    font-weight:700;
+}
+
+.form p span{
+    color: hsl(0, 100%, 74%) ;
+    cursor: pointer;
+}
+
+.error.active{
+    display:none;
+}
+
+.error{
+    display: block;
+    font-size: 8px;
+    /* position: relative; */
+    /* top: -20px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: red;
+}
+
+.icon{
+    width: 1rem;
+}
+
+
