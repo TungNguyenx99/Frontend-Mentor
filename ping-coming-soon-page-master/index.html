@@ -13,22 +13,48 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <section class="container">
+    <div class="container__logo">
+      <img src="images/logo.svg" alt=""/>
+    </div>
 
-  We are launching soon!
+    <div class="container__content">
+      <p>We are launching <span>soon!</span></p>
+      <p>Subscribe and get notified</p>
+    </div>
 
-  Subscribe and get notified
+    <form class="container__control">
+      <div class="container__form">
+        <input type="email" placeholder="Your email address..." id="email"/>
+        <label for="email" id="alert">Please provide a valid email address</label>
+      </div>
+      <button type="submit" id="btnSubmit">Notify Me</button>
+    </form>
 
-  Notify Me
+    <div class="container__image">
+      <img src="./images/illustration-dashboard.png" alt=""/>
+    </div>
 
-  &copy; Copyright Ping. All rights reserved.
+    <div class="container__icon">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
 
+    <div class="container__footer">
+      &copy; Copyright Ping. All rights reserved.
+    </div>
+  </section>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
