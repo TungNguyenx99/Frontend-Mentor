@@ -1,0 +1,37 @@
+.card-main {
+  background-color: hsl(235, 46%, 20%);
+  border-radius: 10px;
+  height:376px
+}
+
+.card-main .profile > * {
+  margin: 10px 0px 0px 10px;
+}
+
+.card-main .profile {
+  border-radius: 10px;
+  background-color: hsl(246, 80%, 60%);
+  color: white;
+  height: 250px;
+}
+
+.card-main .profile .avatar {
+  width: 25%;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.card-main .profile .info {
+  margin-bottom: 40px;
+}
+
+.optionTime {
+  color: white;
+  height: 80px;
+}
+
+.optionTime p {
+  margin: 16px 0 16px 10px;
+}
