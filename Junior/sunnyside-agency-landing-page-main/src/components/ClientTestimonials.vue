@@ -60,7 +60,7 @@ main {
 }
 
 .container {
-  position:absolute;
+  position: relative;
   top:5em;
   display: flex;
   justify-content: space-between;
